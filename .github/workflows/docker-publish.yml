@@ -25,7 +25,7 @@ jobs:
 
     strategy:
       matrix:
-        context: [php71-v1, php71-v2]
+        context: [php71-v1, php71, php74, php81]
 
     permissions:
       contents: read
