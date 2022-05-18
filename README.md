@@ -9,7 +9,7 @@ docker run --rm \
     -u "$(id -u):$(id -g)" \
     -v $(pwd):/var/www/html \
     -w /var/www/html \
-    ghcr.io/benqcloud/composer/php71-v1:latest \
+    ghcr.io/benqcloud/composer:php71-v1 \
     composer install --ignore-platform-reqs
 ```
 
@@ -17,7 +17,7 @@ docker run --rm \
 
 ```dockerfile
 ### builder stage
-FROM ghcr.io/benqcloud/composer/php71-v1:latest AS composer-builder
+FROM ghcr.io/benqcloud/composer:php71-v1 AS composer-builder
 
 WORKDIR /var/www/html
 
