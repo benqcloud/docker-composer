@@ -1,6 +1,6 @@
 # [benqcloud/composer](https://github.com/benqcloud/docker-composer)
 
-![docker-publish](https://github.com/benqcloud/docker-laravel/actions/workflows/docker-publish.yml/badge.svg)
+![docker-publish](https://github.com/benqcloud/docker-composer/actions/workflows/docker-publish.yml/badge.svg)
 
 It is a PHP composer runtime
 
