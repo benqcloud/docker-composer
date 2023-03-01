@@ -1,8 +1,19 @@
-## About `benqcloud/composer`
+# [benqcloud/composer](https://github.com/benqcloud/docker-composer)
+
+![docker-publish](https://github.com/benqcloud/docker-laravel/actions/workflows/docker-publish.yml/badge.svg)
 
 It is a PHP composer runtime
 
-## Installing Composer Dependencies For Existing Applications
+## Supported Architectures
+
+| Architecture | Available
+| :----: | :----: |
+| x86-64 | ✅ |
+| arm64 | ✅ |
+
+## Usage
+
+### docker-cli
 
 ```bash
 docker run --rm \
@@ -13,7 +24,7 @@ docker run --rm \
     composer install --ignore-platform-reqs
 ```
 
-## Use as builder image in Dockerfile
+### Use as builder image in Dockerfile
 
 ```dockerfile
 ### builder stage
