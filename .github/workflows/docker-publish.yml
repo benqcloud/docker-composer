@@ -34,7 +34,7 @@ jobs:
             version: 7.4.33
           - context: php81
             branch: 8.1
-            version: 8.1.23
+            version: 8.1.24
 
     permissions:
       contents: read
