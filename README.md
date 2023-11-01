@@ -18,6 +18,7 @@ It is a PHP composer runtime
 ```bash
 docker run --rm \
     -u "$(id -u):$(id -g)" \
+    -e HOME=/var/www/html \
     -v $(pwd):/var/www/html \
     -w /var/www/html \
     ghcr.io/benqcloud/composer:php-8.1 \
