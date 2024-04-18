@@ -1,6 +1,7 @@
 # [benqcloud/composer](https://github.com/benqcloud/docker-composer)
 
-![docker-publish](https://github.com/benqcloud/docker-composer/actions/workflows/docker-publish.yml/badge.svg)
+![php 8.1](https://github.com/benqcloud/docker-composer/actions/workflows/php81-workflow.yml/badge.svg)
+![php 8.3](https://github.com/benqcloud/docker-composer/actions/workflows/php83-workflow.yml/badge.svg)
 
 It is a PHP composer runtime
 
