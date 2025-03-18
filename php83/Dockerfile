@@ -1,4 +1,4 @@
-FROM php:8.3.14-cli-bookworm
+FROM php:8.3.19-cli-bookworm
 
 LABEL maintainer="Richard Ting"
 
