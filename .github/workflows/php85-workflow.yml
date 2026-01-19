@@ -1,4 +1,4 @@
-name: php83
+name: php85
 
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
@@ -14,8 +14,8 @@ env:
   DOCKERHUB_REGISTRY: docker.io
   # github.repository as <account>/<repo>
   IMAGE_NAME: benqcloud/composer
-  PHP_BRANCH: 8.3
-  PHP_VERSION: 8.3.30
+  PHP_BRANCH: 8.5
+  PHP_VERSION: 8.5.2
   FOLDER: php83
 
 
