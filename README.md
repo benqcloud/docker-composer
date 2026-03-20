@@ -2,6 +2,7 @@
 
 ![php 8.1](https://github.com/benqcloud/docker-composer/actions/workflows/php81-workflow.yml/badge.svg)
 ![php 8.3](https://github.com/benqcloud/docker-composer/actions/workflows/php83-workflow.yml/badge.svg)
+![php 8.5](https://github.com/benqcloud/docker-composer/actions/workflows/php85-workflow.yml/badge.svg)
 
 It is a PHP composer runtime
 
@@ -22,7 +23,7 @@ docker run --rm \
     -e HOME=/var/www/html \
     -v $(pwd):/var/www/html \
     -w /var/www/html \
-    ghcr.io/benqcloud/composer:php-8.1 \
+    ghcr.io/benqcloud/composer:php-8.3 \
     composer install --ignore-platform-reqs
 ```
 
@@ -30,7 +31,7 @@ docker run --rm \
 
 ```dockerfile
 ### builder stage
-FROM ghcr.io/benqcloud/composer:php-8.1 AS composer-builder
+FROM ghcr.io/benqcloud/composer:php-8.3 AS composer-builder
 
 WORKDIR /var/www/html
 
@@ -38,7 +39,7 @@ COPY . /var/www/html
 RUN composer install --optimize-autoloader --no-dev --ignore-platform-reqs
 
 ### runtime stage
-FROM ghcr.io/benqcloud/docker-laravel:php-8.1-apache
+FROM ghcr.io/benqcloud/docker-laravel:php-8.3-apache
 
 WORKDIR /var/www/html
 
