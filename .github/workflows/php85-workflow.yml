@@ -16,7 +16,7 @@ env:
   IMAGE_NAME: benqcloud/composer
   PHP_BRANCH: 8.5
   PHP_VERSION: 8.5.6
-  FOLDER: php83
+  FOLDER: php85
 
 
 jobs:
